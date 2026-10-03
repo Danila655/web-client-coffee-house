@@ -24,33 +24,35 @@
             </div>
 
             <nav class="links">
-                <a href="">t</a>
-                <a href="">t</a>
-                <a href="">t</a>
-                <a href="">t</a>
+                <a href="#about">О нас</a>
+                <a href="#menu">Меню</a>
+                <a href="#gallery">Галерея</a>
+                <a href="#contacts">Контакты</a>
             </nav>
         </div>
 
     </header>
 
     <main>
-        <section class="hero-section">
-            <div class="container section-container">
+        <section>
+            <div class="container hero-container">
                 <div class="hero-description">
-                    <span class="badge pink-badge">text</span>
-                    <h1 class="hero-title">Добро пожаловать в наш кофейный дом</h1>
-                    <p class="hero-text">Исключительное качество кофе и уютная атмосфера ждут вас!</p>
-                    <div class="hero-links">
-                        <a href="" class="btn btn-primary">О нас</a>
-                        <a href="" class="btn btn-secondary">Меню</a>
+                    <span class="badge">100% Арабика</span>
+                    <h1 class="hero-title">Зерно, обжаренное с душой, и атмосфера искреннего уюта</h1>
+                    <p>Grain & Roast — городская спешелти-кофейня со 100% арабикой светлой обжарки из
+                        Эфиопии и Колумбии, ремесленным кофе на зерне класса микролот и свежайшей утренней выпечкой
+                        собственного производства.</p>
+                    <div>
+                        <a href="#about" class="btn btn-primary">О нас</a>
+                        <a href="#menu" class="btn btn-secondary">Меню</a>
                     </div>
                 </div>
 
 
 
 
-                <div class="hero-image">
-                    <img src="" alt="">
+                <div class="image hero-image">
+                    <img src="images/barista.jpg" alt="Бариста готовит кофе за стойкой">
                     <div class="absolute-pos-card">
                         <p class="image-description">Уютное место</p>
                         <p class="image-dop-description">Тихая атмосфера</p>
@@ -61,13 +63,13 @@
 
 
 
-        <section class="about-section">
-            <div class="container section-container">
-                <span class="badge light-badge">О нас</span>
+        <section class="about-section" id="about">
+            <div class="container">
+                <span class="badge">О нас</span>
 
                 <div class="about-content">
-                    <div class="about-image">
-                        <img src="" alt="">
+                    <div class="image about-image">
+                        <img src="images/cafe-interior.jpg" alt="Уютный интерьер кофейни">
                         <div class="absolute-pos-card">
                             <p class="image-description">Уютное место</p>
                             <p class="image-dop-description">Тихая атмосфера</p>
@@ -76,9 +78,15 @@
 
 
                     <div class="about-description">
-                        <h2 class="about-title">О нашей кофейне</h2>
-                        <p class="about-text">text</p>
-                        <p class="about-text">text</p>
+                    <h2>Философия чистого вкуса и бережного отношения к зерну</h2>
+                        <p>Мы верим, что каждая чашка кофе — это законченная история, берущая начало
+                            на высокогорных фермах Африки и Латинской Америки. Мы лично отбираем микролоты свежего
+                            урожая, проводим ежедневные каппинги и подбираем персональные профили обжарки, раскрывая
+                            естественную фруктовую кислотность, плотный сахарный баланс и долгое чистое послевкусие.</p>
+                        <p>В нашем меню нет случайных ингредиентов: мы используем органическое
+                            фермерское молоко, кокосовое и овсяное молоко без сахара, а к напиткам предлагаем свежую
+                            ремесленную выпечку, которую наши пекари создают каждое утро на французском сливочном масле.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -87,21 +95,56 @@
 
 
 
-        <section class="menu-section">
-            <div class="container section-container">
-                <span class="badge light-badge">Меню</span>
-                <h2 class="menu-title">Наше меню</h2>
-                <p class="menu-text">text</p>
-                <div class="menu-filters">
-                    <button type="button" class="filter-btn">Кофе и напитки</button>
-                    <button type="button" class="filter-btn">Десерты и выпечка</button>
+        <section id="menu">
+            <div class="container">
+                <div class="menu-description">
+                    <span class="badge">Меню</span>
+                    <h2>Наше меню</h2>
+                    <p>Тщательно отобранные сорта кофе и десерты из натуральных ингредиентов</p>
+                    <div class="menu-filters">
+                        <button type="button" class="btn btn-filter-usual">Кофе и напитки</button>
+                        <button type="button" class="btn btn-filter-transparent">Десерты и выпечка</button>
+                    </div>
                 </div>
 
-                <div class="grid">
+
+
+                <div class="menu-grid">
                     <div class="menu-card">
-                        <div>
-                            <h3 class="menu-card-title">Название</h3>
-                            <span class="menu-card-price">Цена</span>
+                        <div class="menu-card-header">
+                            <h3>Название</h3>
+                            <span class="badge">Цена</span>
+                        </div>
+                        <p class="menu-card-description">Двойной эспрессо на зерне Колумбия Уила, шелковистая молочная
+                            пена и отчетливые ноты фундука.</p>
+                        <p class="menu-card-info">info</p>
+                    </div>
+
+
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h3>Название</h3>
+                            <span class="badge">Цена</span>
+                        </div>
+                        <p class="menu-card-description">Описание</p>
+                        <p class="menu-card-info">info</p>
+                    </div>
+
+
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h3>Название</h3>
+                            <span class="badge">Цена</span>
+                        </div>
+                        <p class="menu-card-description">Описание</p>
+                        <p class="menu-card-info">info</p>
+                    </div>
+
+
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h3>Название</h3>
+                            <span class="badge">Цена</span>
                         </div>
                         <p class="menu-card-description">Описание</p>
                         <p class="menu-card-info">info</p>
@@ -113,77 +156,64 @@
 
 
 
-        <section class="gallery-section">
-            <div class="container section-container">
-                <span class="badge light-badge">Галерея</span>
+        <section class="gallery-section" id="gallery">
+            <div class="container">
+                <span class="badge">Галерея</span>
                 <div class="gallery-description">
                     <h2 class="gallery-title">Галерея</h2>
-                    <p class="gallery-text">Фотографии нашего кофейного дома</p>
+                    <p class="gallery-text">Кадры из нашей повседневной жизни: шелест кофейных пакетов, пар капучинатора и тепло утренних круассанов.</p>
                 </div>
 
-                <div>
+
+                <div class="gallery-grid">
                     <div class="image">
-                        <img src="" alt="">
+                        <img src="images/cafe-interior.jpg" alt="Светлый интерьер кофейни с деревянной мебелью">
                         <div class="image-description">
-                            <p class="image-description-text">Описание фотографии</p>
-                            <p class="image-dop-description">text</p>
+                            <p class="image-description-text">Тёплый интерьер</p>
+                            <p class="image-dop-description">Место для встреч и отдыха</p>
                         </div>
                     </div>
 
-
-
-                    <div>
-                        <div class="image">
-                            <img src="" alt="">
-                            <div class="image-description">
-                                <p class="image-description-text">Описание фотографии</p>
-                                <p class="image-dop-description">text</p>
-                            </div>
-                        </div>
-
-
-                        <div class="image">
-                            <img src="" alt="">
-                            <div class="image-description">
-                                <p class="image-description-text">Описание фотографии</p>
-                                <p class="image-dop-description">text</p>
-                            </div>
+                    <div class="image">
+                        <img src="images/cafe-table.jpg" alt="Столик в уютной кофейне">
+                        <div class="image-description">
+                            <p class="image-description-text">Уютные детали</p>
+                            <p class="image-dop-description">Время для себя</p>
                         </div>
                     </div>
+
+                    <div class="image">
+                        <img src="images/coffee-moment.jpg" alt="Кофе и кофейные зёрна на столе">
+                        <div class="image-description">
+                            <p class="image-description-text">Момент наслаждения</p>
+                            <p class="image-dop-description">Свежий кофе каждый день</p>
+                        </div>
+                    </div>
+
                 </div>
-
-
             </div>
         </section>
-
     </main>
 
-    <section class="footer-section">
-        <div class="footer-grid">
-            <div>
+    <footer class="footer-section" id="contacts">
+        <div class="footer-flex">
+            <div class="footer-column">
                 <h3 class="footer-title">Часы работы</h3>
                 <p class="footer-text">Пн-Пт: 8:00 - 20:00</p>
                 <p class="footer-text">Сб-Вс: 9:00 - 22:00</p>
             </div>
 
-            <div>
-                <h3 class="footer-title">Часы работы</h3>
-                <p class="footer-text">Пн-Пт: 8:00 - 20:00</p>
-                <p class="footer-text">Сб-Вс: 9:00 - 22:00</p>
-            </div>
 
-            <div>
+            <div class="footer-column">
                 <h3 class="footer-title">Локация</h3>
                 <p class="footer-text">Адрес: ул. Пушкинская, 10</p>
                 <p class="footer-text">Телефон: +7 (123) 456-78-90</p>
             </div>
         </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Our Coffee House. All rights reserved.</p>
-        </div>
+
+        <p class="copyright">&copy; 2026 Our Coffee House. All rights reserved.</p>
     </footer>
+        
 </body>
 
 </html>
