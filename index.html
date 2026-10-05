@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -12,8 +13,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
-
-    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -36,7 +37,7 @@
     <main>
         <section>
             <div class="container hero-container">
-                <div class="hero-description">
+                <div class="hero-description" data-aos="fade-right" data-aos-duration="1000">
                     <h1 class="hero-logo">Grain & Roast</h1>
 
                     <div class="hero-bottom">
@@ -54,7 +55,7 @@
 
 
 
-                <div class="image hero-image">
+                <div class="image hero-image" data-aos="fade-left" data-aos-duration="1000">
                     <img src="images/barista.jpg" alt="Бариста готовит кофе за стойкой">
                     <div class="absolute-pos-card">
                         <p class="image-description">Уютное место</p>
@@ -66,7 +67,7 @@
 
 
 
-        <section class="about-section" id="about">
+        <section class="about-section" id="about" data-aos="fade-up">
             <div class="container">
                 <span class="badge">О нас</span>
 
@@ -100,13 +101,13 @@
 
         <section id="menu">
             <div class="container">
-                <div class="menu-description">
+                <div class="menu-description" data-aos="fade-up">
                     <span class="badge">Меню</span>
                     <h2>Наше меню</h2>
                     <p>Тщательно отобранные сорта кофе и десерты из натуральных ингредиентов</p>
                     <div class="menu-filters">
-                        <button type="button" class="btn btn-filter-usual">Кофе и напитки</button>
-                        <button type="button" class="btn btn-filter-transparent">Десерты и выпечка</button>
+                        <button type="button" class="btn btn-filter-transparent active" id="drinks">Кофе и напитки</button>
+                        <button type="button" class="btn btn-filter-transparent" id="deserts">Десерты и выпечка</button>
                     </div>
                 </div>
 
@@ -114,10 +115,10 @@
 
                 <div class="menu-grid">
 
-                    <div class="menu-card">
+                    <div class="menu-card" data-category="drinks" data-aos="fade-up">
                         <div class="menu-card-header">
                             <div class="menu-card-image">
-                                <img src="images/cards/cappuccino.jpg" alt="Капучино">
+                                <img src="images/cards/drinks/cappuccino.jpg" alt="Капучино">
                             </div>
                             <div>
                                 <h3>Капучино</h3>
@@ -135,10 +136,10 @@
                     </div>
 
 
-                    <div class="menu-card">
+                    <div class="menu-card" data-category="drinks" data-aos="fade-up">
                         <div class="menu-card-header">
                             <div class="menu-card-image">
-                                <img src="images/cards/bumble.jpg" alt="Бамбл">
+                                <img src="images/cards//drinks/bumble.jpg" alt="Бамбл">
                             </div>
                             <div>
                                 <h3>Бамбл</h3>
@@ -156,10 +157,10 @@
                     </div>
 
 
-                    <div class="menu-card">
+                    <div class="menu-card" data-category="drinks" data-aos="fade-up">
                         <div class="menu-card-header">
                             <div class="menu-card-image">
-                                <img src="images/cards/espresso.jpg" alt="Эспрессо">
+                                <img src="images/cards//drinks/espresso.jpg" alt="Эспрессо">
                             </div>
                             <div>
                                 <h3>Эспрессо</h3>
@@ -177,10 +178,10 @@
                     </div>
 
 
-                    <div class="menu-card">
+                    <div class="menu-card" data-category="drinks" data-aos="fade-up">
                         <div class="menu-card-header">
                             <div class="menu-card-image">
-                                <img src="images/cards/latte.jpg" alt="Латте">
+                                <img src="images/cards//drinks/latte.jpg" alt="Латте">
                             </div>
                             <div>
                                 <h3>Латте</h3>
@@ -199,10 +200,10 @@
 
 
 
-                    <div class="menu-card">
+                    <div class="menu-card" data-category="drinks" data-aos="fade-up">
                         <div class="menu-card-header">
                             <div class="menu-card-image">
-                                <img src="images/cards/cappuccino oat.jpg" alt="Капучино на овсяном молоке">
+                                <img src="images/cards/drinks/cappuccino oat.jpg" alt="Капучино на овсяном молоке">
                             </div>
                             <div>
                                 <h3>Овсяный капучино</h3>
@@ -221,10 +222,140 @@
 
 
 
-                    <div class="menu-card">
+                    <div class="menu-card" data-category="drinks" data-aos="fade-up">
                         <div class="menu-card-header">
                             <div class="menu-card-image">
-                                <img src="images/cards/raf.jpg" alt="Раф">
+                                <img src="images/cards/drinks/raf.jpg" alt="Раф">
+                            </div>
+                            <div>
+                                <h3>Раф</h3>
+                                <p class="menu-card-description">Сливочный кофе с ванилью, взбитый до нежной и бархатистой текстуры.</p>
+                            </div>
+
+                            <span class="badge">360 ₽</span>
+                        </div>
+
+                        <div class="menu-card-bottom">
+                            <p class="menu-card-info">300 мл</p>
+                            <object class="icon coffee-icon" type="image/svg+xml" data="./images/icons.svg"
+                                aria-label="Чашка кофе"></object>
+                        </div>
+                    </div>
+
+
+                    <div class="menu-card hidden" data-category="deserts" data-aos="fade-up">
+                        <div class="menu-card-header">
+                            <div class="menu-card-image">
+                                <img src="images/cards/deserts/classicCroissant.jpg" alt="Раф">
+                            </div>
+                            <div>
+                                <h3>Раф</h3>
+                                <p class="menu-card-description">Сливочный кофе с ванилью, взбитый до нежной и бархатистой текстуры.</p>
+                            </div>
+
+                            <span class="badge">360 ₽</span>
+                        </div>
+
+                        <div class="menu-card-bottom">
+                            <p class="menu-card-info">300 мл</p>
+                            <object class="icon coffee-icon" type="image/svg+xml" data="./images/icons.svg"
+                                aria-label="Чашка кофе"></object>
+                        </div>
+                    </div>
+
+
+
+                    <div class="menu-card hidden" data-category="deserts" data-aos="fade-up">
+                        <div class="menu-card-header">
+                            <div class="menu-card-image">
+                                <img src="images/cards/deserts/almondCroissant.jpg" alt="Раф">
+                            </div>
+                            <div>
+                                <h3>Раф</h3>
+                                <p class="menu-card-description">Сливочный кофе с ванилью, взбитый до нежной и бархатистой текстуры.</p>
+                            </div>
+
+                            <span class="badge">360 ₽</span>
+                        </div>
+
+                        <div class="menu-card-bottom">
+                            <p class="menu-card-info">300 мл</p>
+                            <object class="icon coffee-icon" type="image/svg+xml" data="./images/icons.svg"
+                                aria-label="Чашка кофе"></object>
+                        </div>
+                    </div>
+
+
+
+                    <div class="menu-card hidden" data-category="deserts" data-aos="fade-up">
+                        <div class="menu-card-header">
+                            <div class="menu-card-image">
+                                <img src="images/cards/deserts/cinnabon.jpg" alt="Раф">
+                            </div>
+                            <div>
+                                <h3>Раф</h3>
+                                <p class="menu-card-description">Сливочный кофе с ванилью, взбитый до нежной и бархатистой текстуры.</p>
+                            </div>
+
+                            <span class="badge">360 ₽</span>
+                        </div>
+
+                        <div class="menu-card-bottom">
+                            <p class="menu-card-info">300 мл</p>
+                            <object class="icon coffee-icon" type="image/svg+xml" data="./images/icons.svg"
+                                aria-label="Чашка кофе"></object>
+                        </div>
+                    </div>
+
+
+                    <div class="menu-card hidden" data-category="deserts" data-aos="fade-up">
+                        <div class="menu-card-header">
+                            <div class="menu-card-image">
+                                <img src="images/cards/deserts/lemonCheeseCake.jpg" alt="Раф">
+                            </div>
+                            <div>
+                                <h3>Раф</h3>
+                                <p class="menu-card-description">Сливочный кофе с ванилью, взбитый до нежной и бархатистой текстуры.</p>
+                            </div>
+
+                            <span class="badge">360 ₽</span>
+                        </div>
+
+                        <div class="menu-card-bottom">
+                            <p class="menu-card-info">300 мл</p>
+                            <object class="icon coffee-icon" type="image/svg+xml" data="./images/icons.svg"
+                                aria-label="Чашка кофе"></object>
+                        </div>
+                    </div>
+
+
+
+                    <div class="menu-card hidden" data-category="deserts" data-aos="fade-up">
+                        <div class="menu-card-header">
+                            <div class="menu-card-image">
+                                <img src="images/cards/deserts/chocolateCake.jpg" alt="Раф">
+                            </div>
+                            <div>
+                                <h3>Раф</h3>
+                                <p class="menu-card-description">Сливочный кофе с ванилью, взбитый до нежной и бархатистой текстуры.</p>
+                            </div>
+
+                            <span class="badge">360 ₽</span>
+                        </div>
+
+                        <div class="menu-card-bottom">
+                            <p class="menu-card-info">300 мл</p>
+                            <object class="icon coffee-icon" type="image/svg+xml" data="./images/icons.svg"
+                                aria-label="Чашка кофе"></object>
+                        </div>
+                    </div>
+
+
+
+                    <div class="menu-card hidden" data-category="deserts" data-aos="fade-up">
+                        <div class="menu-card-header">
+                            <div class="menu-card-image">
+                                <img src="images/cards/deserts/carrotCake.jpg" alt="Раф">
                             </div>
                             <div>
                                 <h3>Раф</h3>
@@ -249,15 +380,15 @@
 
         <section class="gallery-section" id="gallery">
             <div class="container">
-                <span class="badge">Галерея</span>
-                <div class="gallery-description">
+                <span class="badge" data-aos="fade-rigth">Галерея</span>
+                <div class="gallery-description" data-aos="fade-up">
                     <h2 class="gallery-title">Галерея</h2>
                     <p class="gallery-text">Кадры из нашей повседневной жизни: шелест кофейных пакетов, пар капучинатора
                         и тепло утренних круассанов.</p>
                 </div>
 
 
-                <div class="gallery-grid">
+                <div class="gallery-grid" data-aos="zoom-in" data-aos-duration="900">
                     <div class="image">
                         <img src="images/cafe-interior.jpg" alt="Светлый интерьер кофейни с деревянной мебелью">
                         <div class="absolute-pos-card">
@@ -288,7 +419,7 @@
     </main>
 
     <footer class="footer-section" id="contacts">
-        <div class="footer-flex">
+        <div class="footer-flex" data-aos="fade-up">
             <div class="footer-card">
                 <h3 class="footer-title">Часы работы</h3>
                 <div class="footer-text">

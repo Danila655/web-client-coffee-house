@@ -145,11 +145,6 @@ svg {
 }
 
 
-.btn-filter-usual {
-    background-color: var(--primary-color);
-    color: #fff;
-}
-
 .btn-filter-transparent {
     background-color: transparent;
     color: var(--primary-color);
@@ -532,6 +527,20 @@ svg {
 
 .gallery-grid .image img:hover {
     transform: scale(1.05);
+}
+
+
+
+
+
+/*JS*/
+.hidden{
+    display: none;
+}
+
+.active {
+    background-color: var(--primary-color);
+    color: #fff;
 }
 
 /*Media Queries*/
