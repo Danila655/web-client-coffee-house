@@ -8,8 +8,6 @@ const galleryModal = document.querySelector(".gallery-modal");
 const modalClose = document.querySelector(".gallery-modal-close");
 
 
-
-
 const cards = document.querySelectorAll(".menu-card");
 const buttons = document.querySelectorAll(".menu-filters .btn");
 
@@ -57,12 +55,6 @@ galleryModal.addEventListener("click", event => {
         galleryModal.setAttribute("aria-hidden", "true");
     }
 });
-
-
-
-
-
-
 
 function toggleHidden(category) {
     cards.forEach(card => {

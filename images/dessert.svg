@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M5 10h14l-1.2 9H6.2L5 10Z"
+          fill="none"
+          stroke="#4A3525"
+          stroke-width="1.6"
+          stroke-linejoin="round" />
+    <path d="M4 10h16M7 7c0-1.1.9-2 2-2s2 .9 2 2M13 7c0-1.1.9-2 2-2s2 .9 2 2"
+          fill="none"
+          stroke="#4A3525"
+          stroke-width="1.6"
+          stroke-linecap="round" />
+    <path d="M8 21h8"
+          fill="none"
+          stroke="#4A3525"
+          stroke-width="1.6"
+          stroke-linecap="round" />
+</svg>

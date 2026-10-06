@@ -119,8 +119,6 @@ svg {
     margin-bottom: 0.7rem;
 }
 
-
-
 .btn {
     font: inherit;
     display: inline-block;
@@ -157,9 +155,6 @@ svg {
     transition: all 0.3s ease;
     overflow: visible;
 }
-
-
-
 
 
 .absolute-pos-card {
@@ -268,14 +263,6 @@ svg {
 
 
 
-
-
-
-
-
-
-
-
 .about-section {
     background-color: var(--section-color);
 }
@@ -298,8 +285,6 @@ svg {
     flex-direction: column;
     gap: 1rem;
 }
-
-
 
 
 .menu-description {
@@ -341,8 +326,6 @@ svg {
     border-radius: var(--radius15);
     transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
 }
-
-
 
 
 .menu-card-header {
@@ -396,13 +379,6 @@ svg {
     opacity: 0.8;
     margin-left: 1.2rem;
 }
-
-
-
-
-
-
-
 
 
 .gallery-section {
@@ -494,8 +470,6 @@ svg {
 
 
 
-
-
 /*Hovers*/
 
 .links a:hover {
@@ -528,9 +502,6 @@ svg {
 .gallery-grid .image img:hover {
     transform: scale(1.05);
 }
-
-
-
 
 
 /*JS*/
