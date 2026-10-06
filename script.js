@@ -2,6 +2,13 @@ AOS.init({
     once: true,
 });
 
+const images = document.querySelectorAll(".gallery-grid .image img");
+const modalImage = document.querySelector(".gallery-modal-image");
+const galleryModal = document.querySelector(".gallery-modal");
+const modalClose = document.querySelector(".gallery-modal-close");
+
+
+
 
 const cards = document.querySelectorAll(".menu-card");
 const buttons = document.querySelectorAll(".menu-filters .btn");
@@ -22,6 +29,37 @@ buttons.forEach(button => {
 
     })
 })
+
+
+images.forEach(image => {
+    image.addEventListener("click", () => {
+        console.log(1);
+        const currentSrc = image.src;
+        const currentAlt = image.alt;
+
+
+        modalImage.src = currentSrc;
+        modalImage.alt = currentAlt;
+
+        galleryModal.classList.add("active");
+        galleryModal.setAttribute("aria-hidden", "false");
+    })
+})
+
+modalClose.addEventListener("click", () => {
+    galleryModal.classList.remove("active");
+    galleryModal.setAttribute("aria-hidden", "true");
+});
+
+galleryModal.addEventListener("click", event => {
+    if (event.target === galleryModal) {
+        galleryModal.classList.remove("active");
+        galleryModal.setAttribute("aria-hidden", "true");
+    }
+});
+
+
+
 
 
 
